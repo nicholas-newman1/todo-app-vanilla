@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 200ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.completed .todo-text {
+  text-decoration: line-through;
+  background: #aaa;
+}
+
+.todo-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+.todo-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.todo-form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  width: 100%;
+  background: none;
+  border: 1px solid #bbb;
+  border-right: none;
+  padding: 0.5rem;  
+}
+
+.todo-input:focus, .todo-add:focus {
+  border: 1px solid #111;
+  outline: none;
+}
+
+.todo-add {
+  border-left: none;
+  background: #333;
+  color: white;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+}
+
+.todo-item + .todo-item {
+  margin-top: 0.5rem;
+}
+
+.todo-text {
+  width: 100%;
+  background: #ddd;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.todo-delete {
+  background: #e62d15;
+  color: white;
+}
+
+.todo-complete {
+  background: green;
+  color: white;
+}
+
+.todo-complete:disabled {
+  cursor: default;
+  background: #004701;
+}
+
+.todo-complete:disabled:hover {
+  opacity: 100%;
+}
